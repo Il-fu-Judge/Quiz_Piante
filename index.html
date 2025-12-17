@@ -117,110 +117,105 @@
         </div>
     </div>
 
-    <script>
-        const pianteOriginali = [
-            { nome: " ", latino: "Abelia Grandiflora", img: "img/abelia_grandiflora.jpg" }
-			{ nome: " ", latino: "Agapanthus Umbrellatus", img: "img/agapanthus_umbrellatus.jpg" }
-			{ nome: " ", latino: "Aster", img: "img/aster.jpg" }
-			{ nome: " ", latino: "Berberis Julianae", img: "img/berberis_julianae.jpg" }
-			{ nome: " ", latino: "Berberis Thunbergii", img: "img/berberis_thunbergii.jpg" }
-			{ nome: " ", latino: "Bruxus Pumila", img: "img/bruxus_pumila.jpg" }
-			{ nome: " ", latino: "Bruxus Rotundifolia", img: "img/bruxus_rotundifolia.jpg" }
-			{ nome: " ", latino: "Bruxus Sempervirens", img: "img/bruxus_sempervirens.jpg" }
-			{ nome: " ", latino: "Calluna Vulgaris", img: "img/calluna_vulgaris.jpg" }
-			{ nome: " ", latino: "Camelia Japonica", img: "img/camelia_japonica.jpg" }
-			{ nome: " ", latino: "Camelia Sasanqua", img: "img/camelia_sasanqua.jpg" }
-			{ nome: " ", latino: "Camelia Sinensis", img: "img/camelia_sinensis.jpg" }
-			{ nome: " ", latino: "Carex Comans", img: "img/carex_comans.jpg" }
-			{ nome: " ", latino: "Carex Morrowii", img: "img/carex_morrowii.jpg" }
-			{ nome: " ", latino: "Carex Oshimensis", img: "img/carex_oshimensis.jpg" }
-			{ nome: " ", latino: "Digitalis Ferruginea", img: "img/digitalis_ferruginea.jpg" }
-			{ nome: " ", latino: "Echinacea Purpurea", img: "img/echinacea_purpurea.jpg" }
-			{ nome: " ", latino: "Eleagnus Ebbingei", img: "img/eleagnus_ebbingei.jpg" }
-			{ nome: " ", latino: "Erica X Darleyensis", img: "img/erica_x_darleyensis.jpg" }
-			{ nome: " ", latino: "Euonymus Alatus", img: "img/euonymus_alatus.jpg" }
-			{ nome: " ", latino: "Euonymus Fortunei", img: "img/euonymus_fortunei.jpg" }
-			{ nome: " ", latino: "Euonymus Japonicus", img: "img/euonymus_japonicus.jpg" }
-			{ nome: " ", latino: "Euonymus Japonicus Pulchellus", img: "img/euonymus_japonicus_pulchellus.jpg" }
-			{ nome: " ", latino: "Forsythia", img: "img/forsythia.jpg" }
-			{ nome: " ", latino: "Gaura Lindheimeri", img: "img/gaura_lindheimeri.jpg" }
-			{ nome: " ", latino: "Hydrangea Arborescens", img: "img/hydrangea_arborescens.jpg" }
-			{ nome: " ", latino: "Hydrangea Aspera Sargentiana", img: "img/hydrangea_aspera_sargentiana.jpg" }
-			{ nome: " ", latino: "Hydrangea Macrophylla", img: "img/hydrangea_macrophylla.jpg" }
-			{ nome: " ", latino: "Hydrangea Paniculata", img: "img/hydrangea_paniculata.jpg" }
-			{ nome: " ", latino: "Hydrangea Quercifolia", img: "img/hydrangea_quercifolia.jpg" }
-			{ nome: " ", latino: "Hydrangea Serrata", img: "img/hydrangea_serrata.jpg" }
-			{ nome: " ", latino: "Ilex Acquifolium", img: "img/ilex_acquifolium.jpg" }
-			{ nome: " ", latino: "Ilex Crenata", img: "img/ilex_crenata.jpg" }
-			{ nome: " ", latino: "Kniphofia Uvaria", img: "img/kniphofia_uvaria.jpg" }
-			{ nome: " ", latino: "Lagerstroemia Indica", img: "img/lagerstroemia_indica.jpg" }
-			{ nome: " ", latino: "Laurus Nobilis", img: "img/laurus_nobilis.jpg" }
-			{ nome: " ", latino: "Ligustrum Lucidum", img: "img/ligustrum_lucidum.jpg" }
-			{ nome: " ", latino: "Lonicera Pileata", img: "img/lonicera_pileata.jpg" }
-			{ nome: " ", latino: "Miscanthus Gracillimus", img: "img/miscanthus_gracillimus.jpg" }
-			{ nome: " ", latino: "Miscanthus Kleine Silberspinne", img: "img/miscanthus_kleine_silberspinne.jpg" }
-			{ nome: " ", latino: "Nassella Tenuifolia", img: "img/nassella_tenuifolia.jpg" }
-			{ nome: " ", latino: "Nepeta Faasenii", img: "img/nepeta_faasenii.jpg" }
-			{ nome: " ", latino: "Osmanthus Acuifolium", img: "img/osmanthus_acuifolium.jpg" }
-			{ nome: " ", latino: "Osmanthus Fragrance", img: "img/osmanthus_fragrance.jpg" }
-			{ nome: " ", latino: "Osmanthus Fragrance Aurantiacus", img: "img/osmanthus_fragrance_aurantiacus.jpg" }
-			{ nome: " ", latino: "Osmanthus Ilicifolium", img: "img/osmanthus_ilicifolium.jpg" }
-			{ nome: " ", latino: "Pennisetum Alopecuroides", img: "img/pennisetum_alopecuroides.jpg" }
-			{ nome: " ", latino: "Pieris Japonica", img: "img/pieris_japonica.jpg" }
-			{ nome: " ", latino: "Pittosporum Heterophyllum", img: "img/pittosporum_heterophyllum.jpg" }
-			{ nome: " ", latino: "Pittosporum Tenuifolium", img: "img/pittosporum_tenuifolium.jpg" }
-			{ nome: " ", latino: "Pittosporum Tobira", img: "img/pittosporum_tobira.jpg" }
-			{ nome: " ", latino: "Pittosporum Tobira Nanum", img: "img/pittosporum_tobira_nanum.jpg" }
-			{ nome: " ", latino: "Prunus Cerasifera Nigra Pissardi", img: "img/prunus_cerasifera_nigra_pissardi.jpg" }
-			{ nome: " ", latino: "Prunus Laurocerasus", img: "img/prunus_laurocerasus.jpg" }
-			{ nome: " ", latino: "Prunus Lusitanica", img: "img/prunus_lusitanica.jpg" }
-			{ nome: " ", latino: "Rhododentron Indicum", img: "img/rhododentron_indicum.jpg" }
-			{ nome: " ", latino: "Rhododentron Mollis", img: "img/rhododentron_mollis.jpg" }
-			{ nome: " ", latino: "Rudbeckia", img: "img/rudbeckia.jpg" }
-			{ nome: " ", latino: "Salvia Microphylla", img: "img/salvia_microphylla.jpg" }
-			{ nome: " ", latino: "Spirea Japonica", img: "img/spirea_japonica.jpg" }
-			{ nome: " ", latino: "Verbena Bonariensis", img: "img/verbena_bonariensis.jpg" }
-			{ nome: " ", latino: "Viburnum Carlesii", img: "img/viburnum_carlesii.jpg" }
-			{ nome: " ", latino: "Viburnum Rytidophyllum", img: "img/viburnum_rytidophyllum.jpg" }
-			{ nome: " ", latino: "Viburnum Tinus", img: "img/viburnum_tinus.jpg" }
-			{ nome: " ", latino: "Weigela", img: "img/weigela.jpg" }
+<script>
+    const pianteOriginali = [
+        { nome: "", latino: "Abelia Grandiflora", img: "img/abelia_grandiflora.jpg" },
+        { nome: "", latino: "Agapanthus Umbrellatus", img: "img/agapanthus_umbrellatus.jpg" },
+        { nome: "", latino: "Aster", img: "img/aster.jpg" },
+        { nome: "", latino: "Berberis Julianae", img: "img/berberis_julianae.jpg" },
+        { nome: "", latino: "Berberis Thunbergii", img: "img/berberis_thunbergii.jpg" },
+        { nome: "", latino: "Buxus Pumila", img: "img/bruxus_pumila.jpg" },
+        { nome: "", latino: "Buxus Rotundifolia", img: "img/bruxus_rotundifolia.jpg" },
+        { nome: "", latino: "Buxus Sempervirens", img: "img/bruxus_sempervirens.jpg" },
+        { nome: "", latino: "Calluna Vulgaris", img: "img/calluna_vulgaris.jpg" },
+        { nome: "", latino: "Camelia Japonica", img: "img/camelia_japonica.jpg" },
+        { nome: "", latino: "Camelia Sasanqua", img: "img/camelia_sasanqua.jpg" },
+        { nome: "", latino: "Camelia Sinensis", img: "img/camelia_sinensis.jpg" },
+        { nome: "", latino: "Carex Comans", img: "img/carex_comans.jpg" },
+        { nome: "", latino: "Carex Morrowii", img: "img/carex_morrowii.jpg" },
+        { nome: "", latino: "Carex Oshimensis", img: "img/carex_oshimensis.jpg" },
+        { nome: "", latino: "Digitalis Ferruginea", img: "img/digitalis_ferruginea.jpg" },
+        { nome: "", latino: "Echinacea Purpurea", img: "img/echinacea_purpurea.jpg" },
+        { nome: "", latino: "Eleagnus Ebbingei", img: "img/eleagnus_ebbingei.jpg" },
+        { nome: "", latino: "Erica X Darleyensis", img: "img/erica_x_darleyensis.jpg" },
+        { nome: "", latino: "Euonymus Alatus", img: "img/euonymus_alatus.jpg" },
+        { nome: "", latino: "Euonymus Fortunei", img: "img/euonymus_fortunei.jpg" },
+        { nome: "", latino: "Euonymus Japonicus", img: "img/euonymus_japonicus.jpg" },
+        { nome: "", latino: "Euonymus Japonicus Pulchellus", img: "img/euonymus_japonicus_pulchellus.jpg" },
+        { nome: "", latino: "Forsythia", img: "img/forsythia.jpg" },
+        { nome: "", latino: "Gaura Lindheimeri", img: "img/gaura_lindheimeri.jpg" },
+        { nome: "", latino: "Hydrangea Arborescens", img: "img/hydrangea_arborescens.jpg" },
+        { nome: "", latino: "Hydrangea Aspera Sargentiana", img: "img/hydrangea_aspera_sargentiana.jpg" },
+        { nome: "", latino: "Hydrangea Macrophylla", img: "img/hydrangea_macrophylla.jpg" },
+        { nome: "", latino: "Hydrangea Paniculata", img: "img/hydrangea_paniculata.jpg" },
+        { nome: "", latino: "Hydrangea Quercifolia", img: "img/hydrangea_quercifolia.jpg" },
+        { nome: "", latino: "Hydrangea Serrata", img: "img/hydrangea_serrata.jpg" },
+        { nome: "", latino: "Ilex Acquifolium", img: "img/ilex_acquifolium.jpg" },
+        { nome: "", latino: "Ilex Crenata", img: "img/ilex_crenata.jpg" },
+        { nome: "", latino: "Kniphofia Uvaria", img: "img/kniphofia_uvaria.jpg" },
+        { nome: "", latino: "Lagerstroemia Indica", img: "img/lagerstroemia_indica.jpg" },
+        { nome: "", latino: "Laurus Nobilis", img: "img/laurus_nobilis.jpg" },
+        { nome: "", latino: "Ligustrum Lucidum", img: "img/ligustrum_lucidum.jpg" },
+        { nome: "", latino: "Lonicera Pileata", img: "img/lonicera_pileata.jpg" },
+        { nome: "", latino: "Miscanthus Gracillimus", img: "img/miscanthus_gracillimus.jpg" },
+        { nome: "", latino: "Miscanthus Kleine Silberspinne", img: "img/miscanthus_kleine_silberspinne.jpg" },
+        { nome: "", latino: "Nassella Tenuifolia", img: "img/nassella_tenuifolia.jpg" },
+        { nome: "", latino: "Nepeta Faasenii", img: "img/nepeta_faasenii.jpg" },
+        { nome: "", latino: "Osmanthus Acuifolium", img: "img/osmanthus_acuifolium.jpg" },
+        { nome: "", latino: "Osmanthus Fragrance", img: "img/osmanthus_fragrance.jpg" },
+        { nome: "", latino: "Osmanthus Fragrance Aurantiacus", img: "img/osmanthus_fragrance_aurantiacus.jpg" },
+        { nome: "", latino: "Osmanthus Ilicifolium", img: "img/osmanthus_ilicifolium.jpg" },
+        { nome: "", latino: "Pennisetum Alopecuroides", img: "img/pennisetum_alopecuroides.jpg" },
+        { nome: "", latino: "Pieris Japonica", img: "img/pieris_japonica.jpg" },
+        { nome: "", latino: "Pittosporum Heterophyllum", img: "img/pittosporum_heterophyllum.jpg" },
+        { nome: "", latino: "Pittosporum Tenuifolium", img: "img/pittosporum_tenuifolium.jpg" },
+        { nome: "", latino: "Pittosporum Tobira", img: "img/pittosporum_tobira.jpg" },
+        { nome: "", latino: "Pittosporum Tobira Nanum", img: "img/pittosporum_tobira_nanum.jpg" },
+        { nome: "", latino: "Prunus Cerasifera Nigra Pissardi", img: "img/prunus_cerasifera_nigra_pissardi.jpg" },
+        { nome: "", latino: "Prunus Laurocerasus", img: "img/prunus_laurocerasus.jpg" },
+        { nome: "", latino: "Prunus Lusitanica", img: "img/prunus_lusitanica.jpg" },
+        { nome: "", latino: "Rhododendron Indicum", img: "img/rhododentron_indicum.jpg" },
+        { nome: "", latino: "Rhododendron Mollis", img: "img/rhododentron_mollis.jpg" },
+        { nome: "", latino: "Rudbeckia", img: "img/rudbeckia.jpg" },
+        { nome: "", latino: "Salvia Microphylla", img: "img/salvia_microphylla.jpg" },
+        { nome: "", latino: "Spirea Japonica", img: "img/spirea_japonica.jpg" },
+        { nome: "", latino: "Verbena Bonariensis", img: "img/verbena_bonariensis.jpg" },
+        { nome: "", latino: "Viburnum Carlesii", img: "img/viburnum_carlesii.jpg" },
+        { nome: "", latino: "Viburnum Rytidophyllum", img: "img/viburnum_rytidophyllum.jpg" },
+        { nome: "", latino: "Viburnum Tinus", img: "img/viburnum_tinus.jpg" },
+        { nome: "", latino: "Weigela", img: "img/weigela.jpg" },
+    ];
 
-        ];
+    let mazzoAttuale = [];
+    let flipped = false;
+    const cardElement = document.getElementById('plantCard');
 
-        let mazzoAttuale = [];
-        let flipped = false;
-        const cardElement = document.getElementById('plantCard');
-
-        function loadNewPlant() {
-            // Se il mazzo è vuoto, lo ricarichiamo e lo mescoliamo
-            if (mazzoAttuale.length === 0) {
-                mazzoAttuale = [...pianteOriginali].sort(() => Math.random() - 0.5);
-            }
-            
-            // Estraiamo l'ultima pianta del mazzo (pop la rimuove dall'array)
-            const p = mazzoAttuale.pop();
-            
-            document.getElementById('imageDisplay').src = p.img;
-            document.getElementById('commonNameDisplay').textContent = p.nome;
-            document.getElementById('latinNameDisplay').textContent = p.latino;
+    function loadNewPlant() {
+        if (mazzoAttuale.length === 0) {
+            mazzoAttuale = [...pianteOriginali].sort(() => Math.random() - 0.5);
         }
+        const p = mazzoAttuale.pop();
+        document.getElementById('imageDisplay').src = p.img;
+        document.getElementById('commonNameDisplay').textContent = p.nome;
+        document.getElementById('latinNameDisplay').textContent = p.latino;
+    }
 
-        function handleCardClick() {
-            if (!flipped) {
-                cardElement.classList.add('is-flipped');
-                flipped = true;
-            } else {
-                cardElement.classList.remove('is-flipped');
-                setTimeout(() => {
-                    loadNewPlant();
-                    flipped = false;
-                }, 300);
-            }
+    function handleCardClick() {
+        if (!flipped) {
+            cardElement.classList.add('is-flipped');
+            flipped = true;
+        } else {
+            cardElement.classList.remove('is-flipped');
+            setTimeout(() => {
+                loadNewPlant();
+                flipped = false;
+            }, 300);
         }
+    }
 
-        // Inizio
-        loadNewPlant();
-    </script>
+    loadNewPlant();
+</script>
 
 </body>
+
 </html>
